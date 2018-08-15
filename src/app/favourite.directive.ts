@@ -1,19 +1,19 @@
 import { Directive, HostBinding, Input, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[mwFavourite]'
+  selector: '[mwFavorite]'
 })
 
-export class FavouriteDirective{
-  @HostBinding('class.is-Favourite') isFavourite = true;
-  @HostBinding('class.is-favourite-hovering') hovering = false;
+export class FavoriteDirective{
+  @HostBinding('class.is-Favorite') isFavorite = true;
+  @HostBinding('class.is-favorite-hovering') hovering = false;
   @HostListener('mouseenter') onMouseEnter(){
     this.hovering = true;
   }
   @HostListener('mouseleave') onMouseLeave(){
     this.hovering = false;
   }
-  @Input() set mwFavourite(value) {
-    this.isFavourite = value;
+  @Input() set mwFavorite(value) {
+    this.isFavorite = value;
   }
 }
