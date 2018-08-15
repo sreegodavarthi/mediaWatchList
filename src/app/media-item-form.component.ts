@@ -6,8 +6,8 @@ import { lookupListToken } from './providers';
 
 @Component({
   selector: 'mw-media-item-form',
-  templateUrl: './media-item-form.component.html',
-  styleUrls: ['./media-item-form.component.css']
+  templateUrl: 'app/media-item-form.component.html',
+  styleUrls: ['app/media-item-form.component.css']
 })
 export class MediaItemFormComponent {
   form;
